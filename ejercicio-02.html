@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+        <style>
+            * {
+                font: 1rem italic 'EB Garamond', serif;
+                box-sizing: border-box;
+            }
+
+            body {
+                background: lavender;
+            }
+
+            h1 {
+                font-family: 'Roboto', sans-serif;
+                font-size: 20px;
+                color: #D14021;
+                margin-left: 100px;
+            }
+
+            td {
+                padding: 5px;
+            }
+
+            input[type="submit"] {
+                background: #D14021;
+                padding: 5px 10px;
+                font: 1rem bold;
+                color: white;
+                border: none;
+                border-radius: 30px;
+            }
+
+            input:focus, textarea:focus, select:focus {
+                background: lavender;
+            }
+
+            input, select {
+                background: lavender;
+                border: 2px black solid;
+                font: 1rem "Cambria", sans-serif;
+            }
+
+            .pequenio {
+                width: 80px;
+            }
+
+            .mediano {
+                width: 200px;
+            }
+
+            .anchocompleto {
+                width: 100%;
+            }
+
+            .pregunta {
+                font-style: italic;
+                font-weight: bold;
+                text-align: right;
+                padding-right: 7px;
+            }
+
+            .logo {
+                width: auto;
+                height: auto;
+                text-align: center;
+                margin-top: 70px;
+                margin-bottom: 30px;
+            }
+            
+            .contenedor {
+                border: 3px black solid;
+                background: rgba(232, 108, 82, 0.5);
+                padding: 30px;
+                width: 100%;
+                max-width: 800px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+
+            .revista {
+                float: left;
+                width: 45%;
+                padding: 10px;
+            }
+
+            .form {
+                float: left;
+                width: 55%;
+                padding: 10px;
+            }
+
+            #terminos {
+                font-style: italic;
+                font-weight: bold;
+                padding-right: 7px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <article>
+            <div class="logo">
+                <h1>LA PRIMERA REVISTA DE CINE</h1>
+                <img src="logo.png" style="margin-top: -40px;">
+            </div>
+        </article>
+        <div class="contenedor">
+            <div class="revista">
+                <img src="revista.jpg" style="width: 100%; border: 3px black solid;">
+            </div>
+            <div class="form">
+                <form method="POST" action="http://www.cursos-diseno.es/mi-mail.php">
+                    <table>
+                        <tr>
+                            <td class="pregunta">Nombre</td>
+                            <td>
+                                <input type="text" name="nombre" class="anchocompleto" autofocus required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pregunta">Apellidos</td>
+                            <td>
+                                <input type="text" name="apellidos" class="anchocompleto" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pregunta">Dirección</td>
+                            <td>
+                                <input type="text" name="direccion" class="anchocompleto" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pregunta">Población</td>
+                            <td>
+                                <input type="text" name="poblacion" class="mediano" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pregunta">Provincia</td>
+                            <td>
+                                <select name="provincia" class="mediano" required>
+                                    <option value="">- selecciona -</option>
+                                    <option value="15">A coru&#241;a</option>
+                                    <option value="1">&#193;lava</option>
+                                    <option value="2">Albacete</option>
+                                    <option value="3">Alicante</option>
+                                    <option value="4">Almer&#237;a</option>
+                                    <option value="33">Asturias</option>
+                                    <option value="5">&#193;vila</option>
+                                    <option value="6">Badajoz</option>
+                                    <option value="7">Baleares</option>
+                                    <option value="8">Barcelona</option>
+                                    <option value="9">Burgos</option>
+                                    <option value="10">C&#225;ceres</option>
+                                    <option value="11">C&#225;diz</option>
+                                    <option value="39">Cantabria</option>
+                                    <option value="12">Castell&#243;n</option>
+                                    <option value="51">Ceuta</option>
+                                    <option value="13">Ciudad Real</option>
+                                    <option value="14">C&#243;rdoba</option>
+                                    <option value="16">Cuenca</option>
+                                    <option value="99">Extranjero</option>
+                                    <option value="17">Girona</option>
+                                    <option value="18">Granada</option>
+                                    <option value="19">Guadalajara</option>
+                                    <option value="20">Guip&#250;zcoa</option>
+                                    <option value="21">Huelva</option>
+                                    <option value="22">Huesca</option>
+                                    <option value="23">Ja&#233;n</option>
+                                    <option value="26">La rioja</option>
+                                    <option value="35">Las palmas</option>
+                                    <option value="24">Le&#243;n</option>
+                                    <option value="25">Lleida</option>
+                                    <option value="27">Lugo</option>
+                                    <option value="28">Madrid</option>
+                                    <option value="29">M&#225;laga</option>
+                                    <option value="52">Melilla</option>
+                                    <option value="30">Murcia</option>
+                                    <option value="31">Navarra</option>
+                                    <option value="32">Ourense</option>
+                                    <option value="34">Palencia</option>
+                                    <option value="36">Pontevedra</option>
+                                    <option value="37">Salamanca</option>
+                                    <option value="38">Santa cruz de tenerife</option>
+                                    <option value="40">Segovia</option>
+                                    <option value="41">Sevilla</option>
+                                    <option value="42">Soria</option>
+                                    <option value="43">Tarragona</option>
+                                    <option value="44">Teruel</option>
+                                    <option value="45">Toledo</option>
+                                    <option value="46">Valencia</option>
+                                    <option value="47">Valladolid</option>
+                                    <option value="48">Vizcaya</option>
+                                    <option value="49">Zamora</option>
+                                    <option value="50">Zaragoza</option>
+                                    </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pregunta">Código Postal</td>
+                            <td>
+                                <input type="text" name="cp" class="pequenio" maxlength="5" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pregunta">Email</td>
+                            <td>
+                                <input type="email" name="email" class="anchocompleto" placeholder="correo@email.com" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td id="terminos">
+                                <label>
+                                    <input type="checkbox" name="terminos" value="si" required> Acepto las condiciones de la sucripción
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Suscribirse"></td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td>
+                                <input type="hidden" name="destinatario" value="ainaretework@gmail.com">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
